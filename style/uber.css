@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 72px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+.wrapper-header{
+    width: 55%;
+    margin: 0 auto;
+}
+.header-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.main{
+    width: 55%;
+    margin: 0 auto;
+}
+.search{
+    margin-top: 70px;
+}
+.button-search{
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #626262;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(117, 117, 117, 1);
+}
+.rest-in-moscow{
+    margin-top: 56px;
+    margin-bottom: 16px;
+    color: #1D1D1D;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    margin-bottom: 15px;
+}
+.card:hover{
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(38, 38, 38, .26);
+    background: rgba(38, 38, 38, .04);
+}
+.name{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+    margin-bottom: 4px;
+}
+.food{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+    margin-bottom: 4px;
+}
+.time{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 13px;
+    line-height: 21px;
+    color: #1D1D1D;
+    margin-bottom: 36px;
+}
+.food-img{
+    width: 330px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+
+/* PRELOADER Загрузка на сайт */
+#preloader{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+}
+#preloader.hide-preloader{
+    animation: hidePreloader 2s;
+}
+
+#preloader.preloader-hidden{
+    display: none;
+}
+
+@keyframes hidePreloader{
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* КНОПКА ВОЙТИ */
+.enter:hover{
+    background: green;
+    color: #fff;
+}
+.enter{
+    width: 78px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 50px;
+    background: #FFF;
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 552px;
+    background: #262626;
+}
+.wrapper-footer{
+    width: 55%;
+    margin: 0 auto;
+}
+.white-logo img{
+    margin-top: 60px;
+}
+.hr-1{
+    margin-top: 40px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.language{
+    display: flex;
+    margin-top: 40px;
+}
+select{
+    width: 227px;
+    height: 40px;
+    padding-left: 45px;
+    background: url('..//img-1/world.png');
+    background-position: 5px;
+    background-repeat: no-repeat;
+    color: #FFF;
+    border-radius: 7px;
+    background-color: #626262;
+}
+.uberEats{
+    margin-top: 30px;
+}
+.uberEats span{
+    color: #49A144;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.uberEats p{
+    color: #FFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+}
+.social-media{
+    display: flex;
+    margin-top: 20px;
+}
+.twitter img{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.footer-all{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-navigation-2{
+    margin-top: 39px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-navigation-3{
+    margin-top: 39px;
+    margin-right: 150px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.about,
+.delivery{
+    margin-bottom: 23px;
+}
+.city,
+.price,
+.help{
+    margin-bottom: 23px;
+}
+.hr-2{
+    margin-top: 48px;
+}
+.shops{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.app-store{
+    margin-right: 20px;
+}
+.google-play{
+    margin-left: 20px;
+}
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+}
+.city a:hover,
+.price a:hover,
+.help a:hover,
+.faqs a:hover{
+    color: #49A144;
+}
+.about a:hover,
+.delivery a:hover,
+.restaurant a:hover{
+    color: #49A144;
+}
